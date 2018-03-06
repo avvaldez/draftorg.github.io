@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSDA BAGUIO | ABOUT US</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<style>
+
+	.mySlides {
+		display: none;
+	}
+
+</style>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		  <a class="navbar-brand" href="#">PAWS ADOPT ME</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarColor03" style="margin-left: 500px">
+		    <ul class="navbar-nav mr-auto">
+		      <li class="nav-item active">
+		        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Our Services</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">About Us</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Keep in Touch</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">ADOPT NOW</a>
+		      </li>
+		    </ul>
+		  </div>
+		</nav>
+	</header>
+
+	<div class="w3-content w3-section" style="width: 100%">
+	  <img class="mySlides" src="1.jpeg" style="width:100%">
+	  <img class="mySlides" src="2.jpeg" style="width:100%">
+	  <img class="mySlides" src="3.jpeg" style="width:100%">
+	  <img class="mySlides" src="4.jpeg" style="width:100%">
+	  <img class="mySlides" src="5.jpeg" style="width:100%">
+	</div>
+
+	<script>
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+		    var i;
+		    var x = document.getElementsByClassName("mySlides");
+		    for (i = 0; i < x.length; i++) {
+		       x[i].style.display = "none";  
+		    }
+		    myIndex++;
+		    if (myIndex > x.length) {myIndex = 1}    
+		    x[myIndex-1].style.display = "block";  
+		    setTimeout(carousel, 2000); // Change image every 2 seconds
+		}
+	</script>
+
+</body>
+</html>
