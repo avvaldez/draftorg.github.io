@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>PAWS ADOPT ME | HOME</title>
+	<title>PAWS ADOPT ME | ADOPT NOW</title>
 	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	
 	<style>
 
-	.mySlides {
-		display: none;
+	body {
+		background-image: url(bg1.jpeg);
+		background-size: cover;
 	}
 
 	#container {
@@ -26,8 +28,8 @@
 	#infoi {
 	  z-index: 10;
 	}
-
 </style>
+
 </head>
 <body>
 	<header>
@@ -46,7 +48,7 @@
 		        <a class="nav-link" href="#">Our Services</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="about.html">About Us</a>
+		        <a class="nav-link" href="#">About Us</a>
 		      </li>
 		      <li class="nav-item">
 		        <a class="nav-link" href="keepintouch.html">Keep in Touch</a>
@@ -60,22 +62,51 @@
 	</header>
 
 	<div id="container">
-		<div id="navi">
-			<div class="w3-content w3-section" style="width: 100%">
-			  <img class="mySlides" src="1.jpeg" style="width:100%">
-			  <img class="mySlides" src="2.jpeg" style="width:100%">
-			  <img class="mySlides" src="3.jpeg" style="width:100%">
-			  <img class="mySlides" src="4.jpeg" style="width:100%">
-			  <img class="mySlides" src="5.jpeg" style="width:100%">
-			</div>
-		</div>
+
 		<div id="infoi">
 			<br/>
-			<div class="jumbotron" style="background: rgba(255, 255, 255, 0.6); width: 500px; text-align: left; height: auto">
-			  <h1 class="display-3">HELLO<br/>FRIENDS!</h1>
-			  <p style="color: #566573">PAWS ADOPT ME is an online, searchable database of animals who need homes. From the comfort of their personal computers, pet lovers can search for a pet that best matches their needs. PAWS ADOPT ME is made up of animal-care professionals and regular people volunteering for their local animal welfare organizations all working together to maintain active and accurate homeless pet lists. Most animal welfare volunteers have “real jobs” by day. The success and the magnitude of this project is largely due to their tireless efforts to make a difference. If you would like to help, let us know!</p>
-			  <button type="button" class="btn btn-secondary">Learn More</button>
-			</div>
+
+			<center>
+				<div class="jumbotron" style="background: rgba(255, 255, 255, 0.6); width: 760px; height: 810px; text-align: left; height: auto">
+					<br><br>
+					<table class="table">
+					  <tbody>
+					    <tr>
+					     	<td>
+					      		<div class="card text-white bg-primary mb-3" style="max-width: 20rem; height: 400px">
+								  <div class="card-header"><center> <b>FIND</b> A DOG</center></div>
+
+								  <center>
+								  	<div class="card-body">
+								    	<h6 class="card-title"> Find your perfect companion! </h6>
+								    	<br>
+								    	<img src="adog.jpeg" width="250px" height="180px">
+								    	<br><br>
+								    	<a href="adoptdog.html"><button type="button" class="btn btn-warning">Get Started Now</button></a>
+								  </center>
+								</div>
+							</td>
+					      	
+					      	<td>
+					      		<div class="card text-white bg-secondary mb-3" style="max-width: 20rem;">
+								  <div class="card-header"><center> <b>FIND</b> A CAT</center></div>
+
+								  <center>
+								  	<div class="card-body">
+								    	<h6 class="card-title"> Find your perfect companion! </h6>
+								    	<br>
+								    	<img src="acat.jpeg" width="255px" height="188px">
+								    	<br><br>
+								    	<a href="adoptcat.html"><button type="button" class="btn btn-warning">Get Started Now</button></a>
+								  </center>
+								</div>
+					      	</td>
+					    </tr>
+					  </tbody>
+					</table> 
+				</div>
+			</center>
+
 			<footer>
 				<div class="row">
 					<div class="col-sm-7" style="display: inline; float: left;text-align: center; background-color: #1E1E1E; padding: 10px">
@@ -96,24 +127,6 @@
 			</footer>
 		</div>
 </div>
-
-
-	<script>
-		var myIndex = 0;
-		carousel();
-
-		function carousel() {
-		    var i;
-		    var x = document.getElementsByClassName("mySlides");
-		    for (i = 0; i < x.length; i++) {
-		       x[i].style.display = "none";  
-		    }
-		    myIndex++;
-		    if (myIndex > x.length) {myIndex = 1}    
-		    x[myIndex-1].style.display = "block";  
-		    setTimeout(carousel, 2000); // Change image every 2 seconds
-		}
-	</script>
 
 </body>
 </html>

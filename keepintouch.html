@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>PAWS ADOPT ME | HOME</title>
+	<title>PAWS ADOPT ME | KEEP IN TOUCH </title>
 	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	
 	<style>
 
-	.mySlides {
-		display: none;
+	body {
+		background-image: url(bg.jpeg);
+		background-size: cover;
 	}
 
 	#container {
@@ -26,8 +28,8 @@
 	#infoi {
 	  z-index: 10;
 	}
-
 </style>
+
 </head>
 <body>
 	<header>
@@ -46,7 +48,7 @@
 		        <a class="nav-link" href="#">Our Services</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="about.html">About Us</a>
+		        <a class="nav-link" href="#">About Us</a>
 		      </li>
 		      <li class="nav-item">
 		        <a class="nav-link" href="keepintouch.html">Keep in Touch</a>
@@ -60,22 +62,60 @@
 	</header>
 
 	<div id="container">
-		<div id="navi">
-			<div class="w3-content w3-section" style="width: 100%">
-			  <img class="mySlides" src="1.jpeg" style="width:100%">
-			  <img class="mySlides" src="2.jpeg" style="width:100%">
-			  <img class="mySlides" src="3.jpeg" style="width:100%">
-			  <img class="mySlides" src="4.jpeg" style="width:100%">
-			  <img class="mySlides" src="5.jpeg" style="width:100%">
-			</div>
-		</div>
+
 		<div id="infoi">
 			<br/>
-			<div class="jumbotron" style="background: rgba(255, 255, 255, 0.6); width: 500px; text-align: left; height: auto">
-			  <h1 class="display-3">HELLO<br/>FRIENDS!</h1>
-			  <p style="color: #566573">PAWS ADOPT ME is an online, searchable database of animals who need homes. From the comfort of their personal computers, pet lovers can search for a pet that best matches their needs. PAWS ADOPT ME is made up of animal-care professionals and regular people volunteering for their local animal welfare organizations all working together to maintain active and accurate homeless pet lists. Most animal welfare volunteers have “real jobs” by day. The success and the magnitude of this project is largely due to their tireless efforts to make a difference. If you would like to help, let us know!</p>
-			  <button type="button" class="btn btn-secondary">Learn More</button>
-			</div>
+
+			<center>
+				<div class="jumbotron" style="background: rgba(255, 255, 255, 0.6); width: 890px; text-align: left; height: auto">
+					<table class="table">
+					  <thead>
+					    <tr>
+					      <th><h3 class=""> <b>OUR</b> <br> ADDRESS </h3></th>
+					      <th><h3 class=""> <b>OPENING</b> <br> HOURS </h3></th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					     	<td>
+					      		<p style="color: #35526e"> 
+					      			Porta Vaga Mall, Porta Vaga, Session Road, <br>
+					      			Baguio, 2600 Benguet <br><br>
+									<strong>Email:</strong> pawsadoptme@paws.org.ph <br>
+									<b>Tel:</b>&nbsp;&nbsp;123-456-7890 <br>
+								</p>
+							</td>
+					      	
+					      	<td style="color: #35526e">
+					      		<strong>7:00 AM - 10:00 PM</strong> <br>
+								Monday - Saturday
+								<br><br>
+								<strong>10:00 AM - 6:00 PM</strong> <br>
+								Sunday
+					      	</td>
+					    </tr>
+					    <tr>
+					     	<td>
+					     		<br>
+					      		<img src="map.jpg" width="330px" height="240px">
+							</td>
+					      	
+					      	<td style="color: #35526e">
+					      		<strong>CONTACT</strong> US <br>
+								<div class="form-group">
+							      	<input class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name" type="email"> 
+							      	<input class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" type="email">
+							      	<input class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Subject" type="email">
+							      	<input class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Message" type="email" style="height:80px">
+							      	<button type="submit" class="btn btn-primary"> <i>SEND</i> </button>
+							    </div>
+					      	</td>
+					    </tr>
+					  </tbody>
+					</table> 
+				</div>
+			</center>
+
 			<footer>
 				<div class="row">
 					<div class="col-sm-7" style="display: inline; float: left;text-align: center; background-color: #1E1E1E; padding: 10px">
@@ -96,24 +136,6 @@
 			</footer>
 		</div>
 </div>
-
-
-	<script>
-		var myIndex = 0;
-		carousel();
-
-		function carousel() {
-		    var i;
-		    var x = document.getElementsByClassName("mySlides");
-		    for (i = 0; i < x.length; i++) {
-		       x[i].style.display = "none";  
-		    }
-		    myIndex++;
-		    if (myIndex > x.length) {myIndex = 1}    
-		    x[myIndex-1].style.display = "block";  
-		    setTimeout(carousel, 2000); // Change image every 2 seconds
-		}
-	</script>
 
 </body>
 </html>
